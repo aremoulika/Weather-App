@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 1.6rem;
+}
+h1{
+  font-size: 6rem;
+}
+.app{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: azure;
+}
+
+.app:before {
+  content: '';
+  background: url('./components/pexels-invisiblepower-303530.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 4rem;
+}
+.app .search:hover{
+  color: yellow;
+}
+
+.app input{
+  padding: .7rem 3.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  color: #f8f8f8;
+
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top{
+  width: 100%;
+  margin: 1rem top;
+}
+.app .description{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(360deg);
+}
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 6rem auto;
+  padding: 5rem;
+  border-radius: 12px;
+  background-color: rgba(238, 227, 227, 0.187);
+  height: 100%;
+}
+.bold{
+  font-weight: 600;
+}
+.bold:hover{
+  color: yellow;
+  font-size: 250%;
+}
+
+.temp:hover{
+  color: yellow;
+  font-size: 50%;
+  /* background-image:url('https://images.pexels.com/photos/163323/fog-dawn-landscape-morgenstimmung-163323.jpeg?auto=compress&cs=tinysrgb&w=400')  ; */
+  /* background-repeat: no-repeat; */
+  border-radius: 10%;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
